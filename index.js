@@ -28,6 +28,7 @@ class StopWatch {
       self.stopTimer()
     });
     
+    //リセットボタンを削除したためイベントリスナーを破棄
     // this.$resetBtn.addEventListener('click', function() {
     //   self.resetTimer();
     // })
@@ -55,6 +56,8 @@ class StopWatch {
     this.$startBtn.disabled = ''
   }
 
+  //リセットボタンを削除したため関数を破棄
+
   // resetTimer() {
   //   this.timeSeconds = 0;
   //   this.$display.textContent = '00:00'
@@ -67,6 +70,7 @@ class StopWatch {
   }
 
   switchBtns(flag) {
+    // 条件
     // true => startBtnを可視化
     // false => stopBtnを可視化
 
